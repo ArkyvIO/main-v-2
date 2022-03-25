@@ -1,0 +1,100 @@
+:root {
+    /* Polar Night */
+    --base-color: #2e3440;
+    --base-color-transparent: #2e3440CC;
+    --color-1: #3b4252;
+    --color-2: #434c5e;
+    --color-3: #4c566a;
+
+    /* Snow Storm */
+    --contrast-color-1: #d8dee9;
+    --contrast-color-2: #e5e9f0;
+    --contrast-color-3: #eceff4;
+
+    /* Link Orange */
+    --link-orange: #d08770;
+
+    /* Background Colors */
+    --background-dark: #1A1D24;
+}
+
+html {
+    /* Box sizing to total values set, not added after the fact */
+    box-sizing: border-box;
+    /* Full Height */
+    height: 100%;
+}
+
+body {
+    /* Background color for webpage */
+    background-color: var(--background-dark);
+    /* Default font color for page */
+    color: var(--contrast-color-3);
+    /* Full Height */
+    height: 100%;
+    /* Flexbox */
+    display: flex;
+    /* Align Horizontally */
+    justify-content: center;
+    align-items: center;
+}
+
+html,
+body {
+    margin: 0;
+}
+
+*, *:before, *:after {
+    /* Use box sizing for all */
+    box-sizing: inherit;
+}
+
+#menu-bar {
+    display: flex;
+    max-width: 90vw;
+    flex-wrap: wrap;
+    flex: 1;
+    min-width: 50%;
+    max-width: 90%;
+}
+
+#menu-bar ul {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    gap: 10px;
+}
+
+#menu-bar ul li {
+    border: solid 1px var(--contrast-color-3);
+    flex: 1;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 140px;
+    border-radius: 15%;
+}
+
+#main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 25px;
+}
+
+#main-photo {
+    max-width: 50%;
+    border: 1px solid var(--contrast-color-3);
+    border-radius: 15%;
+}
+
+#photo-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
