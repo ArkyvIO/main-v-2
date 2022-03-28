@@ -67,6 +67,10 @@ a {
     text-decoration: none;
 }
 
+.closeButton {
+    transition: opacity 1s;
+}
+
 .content {
     align-items: center;
     background-color: var(--base-color-transparent);
@@ -78,6 +82,11 @@ a {
     justify-content: center;
     padding: 25px;
     width: 100%;
+    transition: width 1s, height 1s;
+}
+
+.content h1,p {
+    transition: opacity 1s;
 }
 
 .hl {
@@ -85,6 +94,7 @@ a {
     height: 1px;
     border: solid 1px var(--contrast-color-3);
     min-width: 100px;
+    transition: width 1s;
 }
 
 #left-lines {
@@ -99,6 +109,7 @@ a {
     border: solid 1px var(--contrast-color-3);
     border-radius: 50%;
     width: 15vw;
+    transition: opacity 1s;
 }
 
 .menu-wrapper {
@@ -153,6 +164,20 @@ a {
 
 /* Transition Effects */
 
+.hidden {
+    display: none;
+}
+
 .listSelected {
     border: solid 1px var(--contrast-color-3);
+}
+
+.visuallyHiddenBox {
+    opacity: 0;
+    height: 0;
+    width: 0;
+}
+
+.visuallyHidden {
+    opacity: 0;
 }

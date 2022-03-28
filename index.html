@@ -37,13 +37,16 @@
             </div>
         </div>
         <section class="content" id="about">
-            <img src="media/arkyvio.jpg" id="me-image">
-            <h1>About Me</h1>
-            <p>About me stuff</p>
+            <img class="aboutStuff" src="media/arkyvio.jpg" id="me-image">
+            <h1 class="aboutStuff">About Me</h1>
+            <p class="aboutStuff">About me stuff</p>
+            <a href="#" class="closeButton aboutStuff" id="aboutClose">
+                CLOSE
+            </a>
         </section>
         <section class="content" id="links">
-            <h1>All My Links</h1>
-            <ul class="inside-list">
+            <h1 class="linksStuff">All My Links</h1>
+            <ul class="inside-list linksStuff">
                 <a>
                     <li>GitHub</li>
                 </a>
@@ -57,10 +60,13 @@
                     <li>Reddit</li>
                 </a>
             </ul>
+            <a href="#" class="linksStuff" id="linksClose">
+                CLOSE
+            </a>
         </section>
-        <section class="content" id="coffee">
-            <h1>Thanks For Donating</h1>
-            <ul class="inside-list">
+        <section class="content" class="closeButton" id="coffee">
+            <h1 class="coffeeStuff">Thanks For Donating</h1>
+            <ul class="inside-list coffeeStuff">
                 <a>
                     <li>PayPal</li>
                 </a>
@@ -74,6 +80,9 @@
                     <li>Zelle</li>
                 </a>
             </ul>
+            <a href="#" class="closeButton coffeeStuff" id="coffeeClose">
+                CLOSE
+            </a>
         </section>
     </div>
     <script src="js/main.js"></script>
