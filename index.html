@@ -2,90 +2,97 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Arkyv-IO</title>
-    <link rel="stylesheet" href="css/main.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Arkyv-IO</title>
+  <link rel="stylesheet" href="css/main.css">
 </head>
 
 <body>
-    <div class="wrapper">
-        <div class="menu-wrapper">
-            <div id="left-lines">
-                <div class="hl"></div>
-                <div class="vl"></div>
-            </div>
-            <header>
-                <nav>
-                    <ul class="standard-list">
-                        <a href="#" id="about-link">
-                            <li>About</li>
-                        </a>
-                        <a href="#" id="links-link">
-                            <li>Links</li>
-                        </a>
-                        <a href="#" id="coffee-link">
-                            <li>Coffee</li>
-                        </a>
-                    </ul>
-                </nav>
-            </header>
-            <div id="right-lines">
-                <div class="vl"></div>
-                <div class="hl"></div>
-            </div>
+  <nav>
+    <div></div>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#links">Links</a></li>
+      <li><a href="#coffee">Coffee</a></li>
+    </ul>
+    <div></div>
+  </nav>
+  <div id="about" class="hidden">
+    <div class="horizontalFlex">
+      <div class="verticalFlex">
+        <img src="./media/arkyvio.jpg" id="me-image" />
+      </div>
+      <div class="verticalFlex">
+        <div class="title">
+          <h2>HELLO, MY NAME IS</h2> <span id="nameTitle">MICHAEL GRAVES</span>
         </div>
-        <section class="content" id="about">
-            <img class="aboutStuff" src="media/arkyvio.jpg" id="me-image">
-            <h1 class="aboutStuff">About Me</h1>
-            <p class="aboutStuff">About me stuff</p>
-            <a href="#" class="closeButton aboutStuff" id="aboutClose">
-                CLOSE
-            </a>
-        </section>
-        <section class="content" id="links">
-            <h1 class="linksStuff">All My Links</h1>
-            <ul class="inside-list linksStuff">
-                <a>
-                    <li>GitHub</li>
-                </a>
-                <a>
-                    <li>Discord</li>
-                </a>
-                <a>
-                    <li>Email</li>
-                </a>
-                <a>
-                    <li>Reddit</li>
-                </a>
-            </ul>
-            <a href="#" class="linksStuff" id="linksClose">
-                CLOSE
-            </a>
-        </section>
-        <section class="content" class="closeButton" id="coffee">
-            <h1 class="coffeeStuff">Thanks For Donating</h1>
-            <ul class="inside-list coffeeStuff">
-                <a>
-                    <li>PayPal</li>
-                </a>
-                <a>
-                    <li>Venmo</li>
-                </a>
-                <a>
-                    <li>CashApp</li>
-                </a>
-                <a>
-                    <li>Zelle</li>
-                </a>
-            </ul>
-            <a href="#" class="closeButton coffeeStuff" id="coffeeClose">
-                CLOSE
-            </a>
-        </section>
+        <p>I am currently enrolled in college for an associates degree in cyber defense, and am hoping to
+          continue my education by attending a four-year university after graduation.
+        </p>
+        <p>You can use the links above to see the projects I am working on through GitHub, and if you like
+          my work or just want to help, feel free to buy me a coffee (or help me pay for my tuition!) using
+          the paypal / venmo / cashapp links below! Any and all donations are incredibly helpful, and are
+          much appreciated!
+        </p>
+      </div>
     </div>
-    <script src="js/main.js"></script>
+    <a href="#" class="closeButton">close</a>
+  </div>
+  <div id="links" class="hidden">
+    <h2>SOCIAL LINKS</h2>
+    <p>
+      Follow my projects on GitHub, message me on Discord, send me an E-Mail, or follow me on Reddit!
+    </p>
+    <ul class="horizontal-list">
+      <a href="https://www.github.com/arkyvio">
+        <li class="icon-link"><img src="media/github.png">GITHUB</li>
+      </a>
+      <a href="https://www.discord.com/users/313337836503826433">
+        <li class="icon-link"><img src="media/discord.png">DISCORD</li>
+      </a>
+      <a href="mailto:arkyvio@gmail.com">
+        <li class="icon-link"><img src="media/email.png">EMAIL</li>
+      </a>
+      <a href="https://www.reddit.com/u/arkyvio">
+        <li class="icon-link"><img src="media/reddit.png">REDDIT</li>
+      </a>
+    </ul>
+    <a href="#" class="closeButton">close</a>
+  </div>
+  <div id="coffee" class="hidden">
+    <h2>BUY ME A COFFEE (OR TUITION)</h2>
+    <p>
+      Thank you so much for considering donating to my college fund, or for a coffee! All donations
+      go directly to gas, food, or tuition, so that I may continue my education and learn as much as 
+      I possibly can!
+    </p>
+    <ul class="horizontal-list">
+      <a href="https://paypal.me/mikeagraves">
+        <li class="icon-link"><img src="media/paypal.png">PAYPAL</li>
+      </a>
+      <a href="#venmo">
+        <li class="icon-link"><img src="media/venmo.png">VENMO</li>
+      </a>
+      <a href="https://cash.app/$madmikegraves">
+        <li class="icon-link"><img src="media/cashapp.png">CASHAPP</li>
+      </a>
+      <a href="#zelle">
+        <li class="icon-link"><img src="media/z.png">ZELLE</li>
+      </a>
+    </ul>
+    <a href="#" class="closeButton">close</a>
+  </div>
+  <div id="venmo" class="hidden">
+    <img src="media/venmoqr.jpg" id="venmoImage" />
+    <a href="#coffee" class="closeButton">close</a>
+  </div>
+  <div id="zelle" class="hidden">
+    <h1>Zelle Email = Arkyvio@gmail.com</h1>
+    <a href="#coffee" class="closeButton">close</a>
+  </div>
+  <script src="./js/main.js"></script>
 </body>
 
 </html>
