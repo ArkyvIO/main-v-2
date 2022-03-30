@@ -116,6 +116,10 @@ nav > div {
   width: 75%;
 }
 
+#me-image:hover {
+  transform: scale(1.1);
+}
+
 .horizontalFlex {
   display: flex;
   justify-content: center;
@@ -147,6 +151,55 @@ p {
   font-size: 20px;
 }
 
+.horizontal-list {
+  display: flex;
+  flex: 1;
+  list-style-type: none;
+  gap: 5px;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+  justify-content: center;
+  flex-flow: row wrap;
+  width: 80%;
+}
+
+.horizontal-list a {
+  flex: 1;
+}
+
+.icon-link {
+  display: flex;
+  align-items: center;
+  background-color: var(--third-dark);
+  padding: 5px;
+  border: 1px solid var(--first-light);
+  gap: 5px;
+  border-radius: 5px;
+  box-shadow: 0px 5px 10px black;
+  flex-direction: column;
+  margin: auto;
+}
+
+.icon-link:hover {
+  background-color: var(--link-orange);
+  color: var(--background-dark);
+  transform: scale(1.1);
+}
+
+.icon-link img {
+  width: 50px;
+  height: 50px;
+}
+
+#me-image, .icon-link {
+  transition: all 400ms cubic-bezier(.47,1.64,.41,.8);
+}
+
+#venmoImage {
+  height: 80%;
+}
+
 @media (max-width:825px) {
   p {
     font-size: 14px;
@@ -162,5 +215,9 @@ p {
 
   #me-image {
     width: 50%;
+  }
+
+  .horizontal-list {
+    flex-direction: column;
   }
 }
