@@ -204,13 +204,17 @@ p {
   p {
     font-size: 14px;
   }
+
   .horizontalFlex {
     flex-direction: column;
     gap: 10px;
   }
 
   .hidden:target {
-    height: 100%;
+    height: auto;
+    max-height: none;
+    overflow: auto;
+    width: 95vw;
   }
 
   #me-image {
@@ -218,6 +222,18 @@ p {
   }
 
   .horizontal-list {
-    flex-direction: column;
+    
+  }
+
+  body, html {
+    height: auto;
+  }
+
+  .icon-link {
+    width: 23vw;
+  }
+
+  #venmoImage {
+    height: 60vh;
   }
 }
