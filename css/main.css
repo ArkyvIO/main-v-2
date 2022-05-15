@@ -55,7 +55,7 @@ nav ul li a {
 nav ul {
   list-style: none;
   border: 1px var(--contrast-color-3);
-  border-style: none solid none solid;
+  border-style: none solid;
 }
 nav > div {
   height: 1px;
@@ -176,7 +176,7 @@ p {
   border: 1px solid var(--first-light);
   gap: 5px;
   border-radius: 5px;
-  box-shadow: 0px 5px 10px black;
+  box-shadow: 0 5px 10px black;
   flex-direction: column;
   margin: auto;
 }
@@ -219,10 +219,6 @@ p {
 
   #me-image {
     width: 50%;
-  }
-
-  .horizontal-list {
-    
   }
 
   body, html {
